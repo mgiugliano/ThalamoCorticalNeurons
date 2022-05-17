@@ -1,9 +1,9 @@
 # ThalamoCorticalNeurons
 
 Simulating the biophysical and excitable behavior of long-range projection thalamocortical neurons, 
-within the (https://www.flagera.eu/wp-content/uploads/2020/06/FLAG-ERA_JTC2019_HBP_NeuronsReunited.pdf)["Neurons reunited" FLAG-ERA JTC 2019 project]. This work has been cofunded by SISSA and FLAG-ERA (Joint Transnational Call 2019 - Human Brain Project - Project "Neurons reunited".
+within the ["Neurons reunited" FLAG-ERA JTC 2019 project](https://www.flagera.eu/wp-content/uploads/2020/06/FLAG-ERA_JTC2019_HBP_NeuronsReunited.pdf). This work has been cofunded by SISSA and FLAG-ERA (Joint Transnational Call 2019 - Human Brain Project - Project "Neurons reunited".
 
-This repository is heavily based on a fork of (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006753)[Iavarone et al. 2019] and the code released (https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=251881&file=/IavaroneEtAl_PLOSCompBio2019/cNAD_ltb.hoc#tabs-2)[ModelDB, accession number 251881], first modified by Michele GIUGLIANO.
+This repository is heavily based on a fork of [Iavarone et al. 2019](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006753) and the code released [ModelDB, accession number 251881](https://senselab.med.yale.edu/ModelDB/showmodel.cshtml?model=251881&file=/IavaroneEtAl_PLOSCompBio2019/cNAD_ltb.hoc#tabs-2), first modified by Michele GIUGLIANO.
 
 
 Coauthors: 
@@ -64,8 +64,8 @@ Python3 (3.9.12), NEURON (8.1.0), matplotlib (3.5.1), numpy (1.20.1)
 First experiment to import into Blender the result of a simulation (as above).
 
 First install:
-    - the (https://blenderneuron.org)[BlenderNEURON python library and Blender add-on]
-    - (the old version of) (https://download.blender.org/release/Blender2.79/)[Blender 2.79b]
+    - the [BlenderNEURON python library and Blender add-on](https://blenderneuron.org)
+    - (the old version of) [Blender 2.79b](https://download.blender.org/release/Blender2.79/)
 
 Launch Blender.
 
