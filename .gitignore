@@ -1,3 +1,11 @@
 # General
 .DS_Store
 
+# Figures produced by the analysis
+*.png
+
+# The folder containing the BlenderNEURON library/plugin
+blenderneuron/
+
+# The folder containing the executable
+x86_64/

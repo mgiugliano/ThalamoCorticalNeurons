@@ -7,22 +7,25 @@
 # USAGE:  > python3 -i first_test.py
 #
 
-# On some mac, neuron complains about X11, so we disable it (from bash)
-# > unset DISPLAY
-
 # COMPILE MECHANISMS FIRST! (from bash)
 # > nrnivmodl ./mechanisms
-
 
 # Importing standard Neuron-Python libraries
 from neuron import h
 import matplotlib.pyplot as plt
 import numpy as np
 
+# On some mac, neuron complains about X11, so we disable it (from bash)
+# > unset DISPLAY (from Bash, or the following NEURON code)
+import os
+if 'DISPLAY' in os.environ:
+    del os.environ['DISPLAY']
+
+
 h.load_file("stdrun.hoc")       # Load standard tools
 h.cvode_active(1)               # Activatevariable time step integration method
 
-h.load_file("cNAD_ltb_MG.hoc")  # Load the model (template)
+h.load_file("./templates/cNAD_ltb_MG.hoc")  # Load the model (template)
 
 cell = h.cNAD_ltb_MG(           # Create a cell object (instance)
     "morphologies", "EP23HI-LPLC_shrinkcorrect_splicedlayers_pictures23rotated_correctedlayers1.swc")
