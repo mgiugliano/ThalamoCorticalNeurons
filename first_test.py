@@ -87,7 +87,7 @@ plt.xlabel('time [ms]', fontsize=15)
 plt.ylabel('V$_m$ [mV]', fontsize=15)
 plt.minorticks_on()
 plt.show(block=False)
-plt.savefig('soma_response.png')
+plt.savefig('./results/soma_response.png')
 # ---------------------------------------------------------
 
 plt.figure(1)
@@ -100,7 +100,7 @@ plt.xlabel('time [ms]', fontsize=15)
 plt.ylabel('V$_m$ [mV]', fontsize=15)
 plt.minorticks_on()
 plt.show(block=False)
-plt.savefig('dendrites_response.png')
+plt.savefig('./results/dendrites_response.png')
 # ---------------------------------------------------------
 
 plt.figure(2)
@@ -114,5 +114,5 @@ plt.xlabel('time [ms]', fontsize=15)
 plt.ylabel('V$_m$ [mV]', fontsize=15)
 plt.minorticks_on()
 plt.show(block=False)
-plt.savefig('axon_response.png')
+plt.savefig('./results/axon_response.png')
 # ---------------------------------------------------------

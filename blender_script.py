@@ -2,14 +2,17 @@
 # Authored by Dr. Justas BIRGIOLAS (The Ronin Institute, USA)
 #
 
+# Import modules (Blender Python Scripting, math for 'pi', and numpy)
 import bpy
 from math import pi
 import numpy as np
 
-# Delete default cube
+
+# Delete the default 'cube' object if it exists
 if 'Cube' in bpy.data.objects:
     bpy.data.objects['Cube'].select = True
     bpy.ops.object.delete(use_global=False)
+
 
 # Get list of cells from NRN
 bpy.ops.blenderneuron.get_cell_list_from_neuron()
@@ -29,6 +32,7 @@ group.recording_time_end = 5
 
 # How often to collect section variables (in simulation ms)
 group.recording_period = 0.1
+
 
 # How many Blender frames to use for each ms of simulation
 group.frames_per_ms = 10
@@ -90,7 +94,8 @@ bpy.data.scenes['Scene'].render.resolution_x = width
 bpy.data.scenes['Scene'].render.resolution_y = width * 0.5625
 
 # Set video file directory (can also be a specific file name)
-bpy.data.scenes['Scene'].render.filepath = '/tmp/'
+bpy.data.scenes['Scene'].render.filepath = './results/'
+# was bpy.data.scenes['Scene'].render.filepath = '/tmp/'
 
 # Video format
 bpy.data.scenes['Scene'].render.image_settings.file_format = 'FFMPEG'

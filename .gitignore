@@ -3,6 +3,7 @@
 
 # Figures produced by the analysis
 *.png
+results/
 
 # The folder containing the BlenderNEURON library/plugin
 blenderneuron/
