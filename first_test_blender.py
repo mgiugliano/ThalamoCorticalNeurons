@@ -10,6 +10,14 @@
 # COMPILE MECHANISMS FIRST! (from bash)
 # > nrnivmodl ./mechanisms
 
+
+# On some mac, neuron complains about X11, so we disable it (from bash)
+# > unset DISPLAY (from Bash, or the following NEURON code)
+import os
+if 'DISPLAY' in os.environ:
+    del os.environ['DISPLAY']
+
+
 # Importing standard (Neuron-Python) libraries
 from neuron import h
 import matplotlib.pyplot as plt
@@ -17,12 +25,6 @@ import numpy as np
 
 # Import blenderneuron library / activate NeuronPython - Blender interface
 from blenderneuron import neuronstart
-
-# On some mac, neuron complains about X11, so we disable it (from bash)
-# > unset DISPLAY (from Bash, or the following NEURON code)
-import os
-if 'DISPLAY' in os.environ:
-    del os.environ['DISPLAY']
 
 
 h.load_file("stdrun.hoc")       # Load standard tools

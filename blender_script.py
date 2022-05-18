@@ -20,6 +20,7 @@ bpy.ops.blenderneuron.get_cell_list_from_neuron()
 # Get a reference to the cell group
 group = bpy.data.scenes["Scene"].BlenderNEURON.groups[0]
 
+
 # Tell BN to collect section variable values over time
 group.record_activity = True
 
@@ -85,6 +86,10 @@ bpy.data.objects['Camera'].rotation_euler \
 bpy.data.worlds['World'].use_sky_blend = True
 bpy.data.worlds['World'].zenith_color = [0, 0, 0]  # Black
 bpy.data.worlds['World'].horizon_color = [0, 0, 0.011]  # Dark blue
+
+# DOES NOT WORK !!!!!!!!!!!!!!! Move/rotate the neuron
+# bpy.data.objects['cNAD_ltb_MG[0].soma[0]'].location = [2576, 215, -355]  # XYZ
+
 
 # Set render resolution
 width = 1920

@@ -10,3 +10,7 @@ blenderneuron/
 
 # The folder containing the executable
 x86_64/
+
+
+# morphologies (for the time being)
+morphologies/
